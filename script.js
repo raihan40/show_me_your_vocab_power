@@ -53,7 +53,7 @@ function hypen_genarate() {
 
 function user_try() {
 
-    let key = document.getElementById('key_value').value;
+    let key = document.getElementById('key_value').value.toLowerCase();
     let pattern = /^[A-Za-z]+$/;
     if (!pattern.test(key)) {
         alert("only alphabet allowed !");
