@@ -83,7 +83,7 @@ function user_try() {
             try_flag++;
             chance--;
             document.getElementById("try-id").innerHTML = chance
-            alert("Worng Guess!")
+            //alert("Worng Guess!")
             setTimeout(function() {
                 if (try_flag == 5) {
                     var userChoice = confirm("You lose ! Press OK to continue or Cancel to stop.");
@@ -164,5 +164,5 @@ function answer() {
         x += current_word[i];
     }
     alert(x)
-    flussh();
+   // flussh();
 }
