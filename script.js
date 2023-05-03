@@ -86,7 +86,12 @@ function user_try() {
             //alert("Worng Guess!")
             setTimeout(function() {
                 if (try_flag == 5) {
-                    var userChoice = confirm("You lose ! Press OK to continue or Cancel to stop.");
+                   let x = ""
+                    for (let i = 0; i < current_word.length; i++) {
+                        x += current_word[i];
+                    }
+                    var userChoice = confirm("You lose!\n" + "Answer is " + x + "\nPress OK tocontinue or Cancel to stop.");
+
                     if (userChoice == true) {
                         // document.getElementById("disp").innerHTML = buffer;
                         flussh()
